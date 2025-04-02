@@ -138,7 +138,7 @@ ul li a:hover {
 }
 
 .hero__image img {
-  width: 200px; /* Atur ukuran gambar sesuai kebutuhan */
+  width: min(25rem, 90%); /* Atur ukuran gambar sesuai kebutuhan */
   border-radius: 50%; /* Membuat gambar bulat */
 }
 
@@ -180,3 +180,47 @@ ul li a:hover {
 }
 
 /* Media Queries untuk Respons
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: rgba(18, 18, 18, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__image {
+    margin-top: 2rem;
+  }
+
+  .projects__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%; /* Lebar proyek lebih kecil di perangkat mobile */
+  }
+}
