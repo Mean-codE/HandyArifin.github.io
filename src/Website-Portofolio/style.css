@@ -138,13 +138,20 @@ ul li a:hover {
 }
 
 .hero__image img {
-  width: min(25rem, 90%); /* Atur ukuran gambar sesuai kebutuhan */
-  border-radius: 50%; /* Membuat gambar bulat */
+  width: min(25rem, 90%);
+  border-radius: 50%;
 }
 
 .projects {
   padding: 4rem 0;
   text-align: center;
+}
+
+.imgprj {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .projects h2 {
@@ -163,10 +170,10 @@ ul li a:hover {
 }
 
 .project {
-  background-color: #1e1e1e; /* Warna latar belakang proyek */
+  background-color: #1e1e1e;
   border-radius: 5px;
   padding: 1.5rem;
-  width: 300px; /* Atur lebar proyek */
+  width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -179,8 +186,6 @@ ul li a:hover {
   color: var(--text-light);
 }
 
-/* Media Queries untuk Respons
-/* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
   nav .checkbox {
     display: block;
