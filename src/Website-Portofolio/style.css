@@ -142,6 +142,30 @@ ul li a:hover {
   border-radius: 50%;
 }
 
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.contact__content {
+  width: 70%;
+}
+
+.contact__description {
+  text-align: center;
+}
+
+.contact__description:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
 .projects {
   padding: 4rem 0;
   text-align: center;
@@ -175,6 +199,9 @@ ul li a:hover {
   padding: 1.5rem;
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project h3 {
@@ -184,6 +211,15 @@ ul li a:hover {
 
 .project h3 a {
   color: var(--primary-color);
+  transition: color 0.15s ease-in;
+  -webkit-transition: color 0.15s ease-in;
+  -moz-transition: color 0.15s ease-in;
+  -ms-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
+}
+
+.project h3 a:hover {
+  color: chartreuse;
 }
 
 .project p {
