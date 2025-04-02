@@ -182,6 +182,10 @@ ul li a:hover {
   color: var(--primary-color);
 }
 
+.project h3 a {
+  color: var(--primary-color);
+}
+
 .project p {
   color: var(--text-light);
 }
