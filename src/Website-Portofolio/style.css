@@ -162,8 +162,31 @@ ul li a:hover {
   text-align: center;
 }
 
+.contact__details {
+  display: flex;
+  justify-content: center;
+}
+
 .contact__description:nth-of-type(2) {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.email {
+  margin-right: 5px;
+}
+
+.linked {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+  -webkit-transition: color 0.15s ease-in;
+  -moz-transition: color 0.15s ease-in;
+  -ms-transition: color 0.15s ease-in;
+  -o-transition: color 0.15s ease-in;
+}
+
+.linked:hover {
+  color: chartreuse;
 }
 
 .projects {
