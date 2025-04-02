@@ -10,6 +10,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio | Web Developer</title>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+</head>
   </head>
   <body>
     <nav>
@@ -17,17 +20,23 @@
         <div class="logo"><a href="#">MyPortfolio</a></div>
 
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero" class="nav-link" data-section="hero">Home</a></li>
+          <li>
+            <a href="#hero" class="nav-link" data-section="hero">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__container">
         <div class="hero__content">
-          <h1 class="hero__title">Hello, I'm <span>Alex</span></h1>
+          <h1 class="hero__title">Hello, I'm <span>Handy</span></h1>
           <p class="hero__description">
             A passionate web developer with a knack for creating stunning and
             responsive websites.
@@ -42,7 +51,25 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__content">
+          <h2 class="contact__title">Personal Contact Information</h2>
+          <p class="contact__description">
+            Over the past five years, I have been deeply involved in business development, where my focus extended beyond merely establishing a foundational business model. I dedicated myself to enhancing the usability of the products offered and assessing their impact on society at large. Throughout this journey, I leveraged a diverse set of skills to support every initiative undertaken. This process began with a thorough review of business models that aligned with the company's overarching vision and mission, followed by the design of innovative and effective marketing strategies. The results of these efforts have been quite gratifying, as evidenced by a significant increase in sales and the successful maintenance of strong relationships between our customers and the community.
+          </p>
+          <p class="contact__description">Currently, I am transitioning into the field of Front-End Development, where I aim to bring along my honed problem-solving skills, meticulous attention to detail, and experience in creative thinking. I am genuinely excited about the prospect of applying these skills and pursuing my passion for creating new and impactful solutions that can bring joy to a wider audience. One of my primary focuses is to develop interactive and responsive websites in the future, which not only captivate users visually but also provide an exceptional user experience.</p>
+          <div class="contact__details">
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
       <h2>My Projects</h2>
       <div class="projects__container">
         <div class="project">
@@ -58,9 +85,12 @@
           </p>
         </div>
         <div class="project">
-          <img class="imgprj" src="" alt="" />
-          <h3>Project 3</h3>
-          <p>A brief description of project 3.</p>
+          <img class="imgprj" src="images/contact us.png" alt="" />
+          <h3><a href="project3/index.html">Contact Us</a></h3>
+          <p>
+            A simple contact us form that allows user add their contact and it
+            will give you a confirmation
+          </p>
         </div>
       </div>
     </section>
